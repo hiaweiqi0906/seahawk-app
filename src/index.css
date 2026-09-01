@@ -1,0 +1,119 @@
+:root {
+  --bg: #17150f;
+  --panel: #221e19;
+  --panel-alt: #2b2620;
+  --panel-stripe: #332d25;
+  --nav-bg: #211d18;
+  --border: #3a342b;
+  --border-strong: #4a4238;
+  --text: #f5f1ea;
+  --text-secondary: #d6cdbe;
+  --text-muted: #a69a87;
+  --text-faint: #7a6f5f;
+  --gold: #e5a62a;
+  --gold-hover: #f7d486;
+  --gold-gradient: linear-gradient(135deg, #f7d486, #e5a62a);
+  --accent2: #c9a15c;
+  --green: #57c77e;
+  --red: #e5573a;
+  --ink: #1a1611;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f7f3ec;
+  --panel: #ffffff;
+  --panel-alt: #efe7d8;
+  --panel-stripe: #e4d9c4;
+  --nav-bg: #ffffff;
+  --border: #e3d9c6;
+  --border-strong: #cbbfa5;
+  --text: #221c13;
+  --text-secondary: #4a4032;
+  --text-muted: #7a6f5b;
+  --text-faint: #9c927d;
+  --gold: #b9791a;
+  --gold-hover: #d89a2e;
+  --gold-gradient: linear-gradient(135deg, #e8b34c, #c17f17);
+  --accent2: #8a6a3e;
+  --green: #2e9457;
+  --red: #c2432a;
+  --ink: #1a1611;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Barlow', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gold-hover);
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.heading {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.screen-scroll {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.screen-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
