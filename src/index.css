@@ -63,6 +63,7 @@ body {
   color: var(--text);
   font-family: 'Barlow', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  touch-action: pan-x pan-y;
 }
 
 #root {
