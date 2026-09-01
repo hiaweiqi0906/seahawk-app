@@ -92,7 +92,7 @@ export function Home() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
           <span className="heading" style={{ fontSize: 20 }}>New arrivals</span>
-          <div style={{ display: 'flex', gap: 12, overflowX: 'auto' }}>
+          <div style={{ display: 'flex', gap: 12, overflowX: 'auto', minWidth: 0, touchAction: 'pan-x' }}>
             {NEW_ARRIVALS.map((p) => (
               <Link
                 key={p.slug}

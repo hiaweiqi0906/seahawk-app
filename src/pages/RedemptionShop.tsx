@@ -37,7 +37,7 @@ export function RedemptionShop() {
           Spend points on Seahawk gear or instant vouchers.
         </span>
 
-        <div style={{ display: 'flex', gap: 7, overflowX: 'auto' }}>
+        <div style={{ display: 'flex', gap: 7, overflowX: 'auto', minWidth: 0, touchAction: 'pan-x' }}>
           {REWARD_CATEGORIES.map((c) => {
             const active = c === category;
             return (

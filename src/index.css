@@ -55,6 +55,7 @@ body {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -63,11 +64,13 @@ body {
   color: var(--text);
   font-family: 'Barlow', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
-  touch-action: pan-x pan-y;
+  touch-action: pan-y;
+  overscroll-behavior-x: none;
 }
 
 #root {
   height: 100%;
+  overflow-x: hidden;
 }
 
 a {
